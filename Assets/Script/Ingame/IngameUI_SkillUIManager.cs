@@ -4,16 +4,25 @@ using UnityEngine;
 
 public class IngameUI_SkillUIManager : MonoBehaviour {
 
-    public GameObject[] firstTierSkillUIList;
+    private GameObject[] firstTierSkillUIList;
     
     public const int defaultSelectedSkill = 1;
 
     private int nowSelectedSkill;    
     private void Awake()
-    {        
-        if (defaultSelectedSkill > firstTierSkillUIList.Length)            
-            Debug.LogError("now default Selected Skill in UI : " + defaultSelectedSkill 
-                + " Length : " + firstTierSkillUIList.Length);      
+    {
+        int count = this.transform.childCount;
+
+        firstTierSkillUIList = new GameObject[count];
+        for(int i = 0; i< count; i++)
+        {
+            firstTierSkillUIList[i] = transform.GetChild(i).gameObject;
+        }
+
+
+        if (defaultSelectedSkill > firstTierSkillUIList.Length)
+            Debug.LogError("now default Selected Skill in UI : " + defaultSelectedSkill
+                + " Length : " + firstTierSkillUIList.Length);
         nowSelectedSkill = defaultSelectedSkill;
         SelectSkill(nowSelectedSkill);
     }
@@ -36,11 +45,12 @@ public class IngameUI_SkillUIManager : MonoBehaviour {
     }
     private void SkillInputManager()
     {
-        if(Input.GetButtonUp("Fire2"))// Have to set for Vive Controller
+        if (Input.GetButtonUp("Fire2"))// Have to set for Vive Controller
         {
             nowSelectedSkill++;
             nowSelectedSkill = nowSelectedSkill % firstTierSkillUIList.Length;
-            SelectSkill(nowSelectedSkill);            
+            SelectSkill(nowSelectedSkill);
         }
     }    
+    
 }
