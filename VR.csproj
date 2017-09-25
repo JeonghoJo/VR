@@ -122,18 +122,27 @@
     <Compile Include="Assets\Asset\Standard Assets\Utility\TimedObjectDestructor.cs" />
     <Compile Include="Assets\Asset\Standard Assets\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\Asset\Standard Assets\Utility\WaypointProgressTracker.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Script\CameraByADWS.cs" />
     <Compile Include="Assets\Script\CameraRotationByMouseMovement.cs" />
     <Compile Include="Assets\Script\IteamInfo.cs" />
     <Compile Include="Assets\Script\PlayerInfo.cs" />
     <Compile Include="Assets\Script\UIController.cs" />
+=======
+    <Compile Include="Assets\Script\Ingame\IngameUI_SelectedSkill.cs" />
+    <Compile Include="Assets\Script\Ingame\IngameUI_SkillUIManager.cs" />
+    <Compile Include="Assets\Script\Ingame\IngameUI_String.cs" />
+>>>>>>> ca3026879aa5a156ece4fe7c06388539feb79827
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Asset\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Asset\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\Asset\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+<<<<<<< HEAD
     <None Include="Assets\Texture\Crosshair\crosshair.shader" />
+=======
+>>>>>>> ca3026879aa5a156ece4fe7c06388539feb79827
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
