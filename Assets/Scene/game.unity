@@ -550,10 +550,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29aaf1f7a408e2b408b505c9143b7510, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstTierSkillUIList:
-  - {fileID: 1032461301}
-  - {fileID: 1534248536}
-  - {fileID: 1414393130}
 --- !u!114 &815502164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,7 +561,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29aaf1f7a408e2b408b505c9143b7510, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstTierSkillUIList: []
 --- !u!1 &877723459
 GameObject:
   m_ObjectHideFlags: 0
