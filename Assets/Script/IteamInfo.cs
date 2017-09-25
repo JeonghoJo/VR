@@ -7,9 +7,5 @@ public class IteamInfo : MonoBehaviour {
 
     public Sprite itemImage;
 
-
-    public void DestoryIteam()
-    {
-        Destroy(gameObject);
-    }
+    
 }
